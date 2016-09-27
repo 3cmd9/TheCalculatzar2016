@@ -22,4 +22,20 @@ public class Scientific {
     public static double volOfPyramid(double length, double width, double height) {
         return ((length * width * height)/3);
     }
+    
+    public static double areaOfRect(double l, double w) {
+        return (l*w);
+    }
+    
+    public static double areaOfCircle(double d) {
+        return (Math.PI * d);
+    }
+    
+    public static double areaOfTriangle(double b, double h) {
+        return (b * h / 2);
+    }
+    
+    public static double areaOfTrapeze(double b, double a, double h) {
+        return ((a+b)*h/2);
+    }
 }
