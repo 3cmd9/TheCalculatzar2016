@@ -37,7 +37,11 @@ public class Scientific {
     public static double areaOfSphere(double r) {
         return (4 * Math.PI * r * r);
     }
-
+    
+    public static double areaOfCylinder(double r, double h) {
+        return (2 * (Math.PI * r * r) + 2 * Math.PI * r * h);
+    }
+    
     public static double areaOfTriangle(double b, double h) {
         return (b * h / 2);
     }
