@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package thecalculatza16;
 
 /**
@@ -15,8 +10,16 @@ public class Scientific {
         return (l*w);
     }
     
-    public static double areaOfCircle(double d) {
-        return (Math.PI * d);
+    public static double areaOfRectPrism(double l, double w, double h) {
+        return (2*l*w + 2*l*h + 2*w*h);
+    }
+    
+    public static double areaOfCircle(double r) {
+        return (Math.PI * r * r);
+    }
+    
+    public static double areaOfSphere(double r) {
+        return (4 * Math.PI * r * r);
     }
     
     public static double areaOfTriangle(double b, double h) {
