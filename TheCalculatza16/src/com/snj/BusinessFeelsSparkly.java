@@ -3,15 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.tristan;
+package com.snj;
 
 /**
  *
- * @author 069948099
+ * @author 073685844
  */
-public class EssayCalc {
-    public static void main(String [] args){
-        
-    }
-    
+public class BusinessFeelsSparkly {
+    //this works
+    // hahah
 }
