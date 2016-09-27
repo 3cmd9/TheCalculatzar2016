@@ -16,6 +16,58 @@ public class TheCalculatza16 {
      */
     public static void main(String[] args) {
         // hi. james wrote this :)
+       //Tristan likes to wear hats
+       //Jake goes to the club on tuesdays
+       //69
+      
+       
+
+
+    //Jake's mom is coool ;)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Hey James
     }
     
 }
