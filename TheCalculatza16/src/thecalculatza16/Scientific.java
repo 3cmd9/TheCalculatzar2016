@@ -6,7 +6,7 @@ package thecalculatza16;
  */
 public class Scientific {
 
-    public static double volOfCylc(double radius, double height) {
+    public static double volOfCyl(double radius, double height) {
         return (height * (4 / 3) * Math.PI * (Math.pow(radius, 3)));
     }
 
@@ -37,17 +37,38 @@ public class Scientific {
     public static double areaOfSphere(double r) {
         return (4 * Math.PI * r * r);
     }
-    
+
     public static double areaOfCylinder(double r, double h) {
         return (2 * (Math.PI * r * r) + 2 * Math.PI * r * h);
     }
-    
+
     public static double areaOfTriangle(double b, double h) {
         return (b * h / 2);
     }
 
     public static double areaOfTrapeze(double b, double a, double h) {
         return ((a + b) * h / 2);
+    }
+
+    public static String decToFrac(double dec) {
+        double base = 1;
+        double temp;
+        dec *= base *= 10 * (Double.toString(dec).length() - (Double.toString(dec).indexOf('.')));
+        double decConst = dec;
+        double baseConst = base;
+        if (dec < base) {
+            temp = base;
+            base = dec;
+            dec = base;
+        }
+        while (base != 0.0) {
+            temp = dec % base;
+            dec = base;
+            base = temp;
+        }
+        decConst /= dec;
+        baseConst /= dec;
+        return (decConst + "/" + baseConst);
     }
     
     public static String linearEqnOf(double x1, double y1, double x2, double y2) {
