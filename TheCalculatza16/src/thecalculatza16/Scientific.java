@@ -49,4 +49,12 @@ public class Scientific {
     public static double areaOfTrapeze(double b, double a, double h) {
         return ((a + b) * h / 2);
     }
+    
+    public static String linearEqnOf(double x1, double y1, double x2, double y2) {
+        String eqn = "y = ";
+        double slope = ((y2 - y1)/(x2-x1));
+        eqn +=  slope + "x";
+        eqn += (y2 - slope * x2);
+        return eqn;
+    }
 }
