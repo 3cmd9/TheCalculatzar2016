@@ -10,6 +10,8 @@ package com.snj;
  * @author 073685844
  */
 public class BusinessFeelsSparkly {
+    
+        
     //WE NEED:
     // James - Profit calculator (175 onwards)
     //  Nate - 
