@@ -13,6 +13,11 @@ public class BusinessFeelsSparkly {
     
     public static void main(String[] args) {
         
+        
+        
+        
+        
+        
     }    
     //WE NEED:
     // James - Profit calculator (175 onwards) - Mortgage (after my other one.)
@@ -21,12 +26,7 @@ public class BusinessFeelsSparkly {
     //
     //
     //
-    //
-    //
-    //
-    //
-    //
-    //
+    //  
     
     
     
@@ -98,10 +98,12 @@ public class BusinessFeelsSparkly {
     
     
     //spencer
-    
-    
-    
-    
+    public static double simple (double sumBorrowed, double percent, double time) {
+    double totAmount = 0;    
+    percent = percent/100;
+    totAmount = (sumBorrowed*percent*time) + sumBorrowed;
+    return totAmount;
+    }  
     
     
     
@@ -173,8 +175,6 @@ public class BusinessFeelsSparkly {
     
     
 
-    
-    
     
     
     
@@ -213,11 +213,11 @@ public class BusinessFeelsSparkly {
     
     
 }
-public static int mortgage(int moPay, int pri, int inRa, int payOft, int payLong) {    
-    int nuPa = payOft * payLong;
+public static double mortgage(double princ, double inRa, double payOft, double payLong) {    
+    double nuPa = payOft * payLong;
+    double monthPay;
     
-    
-    
+    monthPay = princ * ((inRa*Math.pow(1 + inRa, nuPa)));
     
     
     
@@ -248,7 +248,7 @@ public static int mortgage(int moPay, int pri, int inRa, int payOft, int payLong
 
 
 
-    return moMade;
+    return monthPay;
 }
 
 
