@@ -17,7 +17,7 @@ public class BusinessFeelsSparkly {
     //WE NEED:
     // James - Profit calculator (175 onwards) - Mortgage (after my other one.)
     //  Nate - Currency
-    //Spencer - 
+    // Spencer - Interest calculator
     //
     //
     //
@@ -213,8 +213,8 @@ public class BusinessFeelsSparkly {
     
     
 }
-public static int mortgage(int moMade, int moExp) {    
-    
+public static int mortgage(int moPay, int pri, int inRa, int payOft, int payLong) {    
+    int nuPa = payOft * payLong;
     
     
     
