@@ -33,7 +33,7 @@ public class EssayCalc {
         return wordCount + 1;
     }
     
-    
+      /////////////////////////////JAKE ON TOP, CAMERON ON BOTTOM/////////////////////
      public static int numVowel(String essay) {
         int numVowel = 0;
         for (int i = 0; i <= essay.length() - 1; i++) {
@@ -69,7 +69,4 @@ public class EssayCalc {
         return numParagraph;
     }
     
-    
-
-    /////////////////////////////JAKE ON TOP, CAMERON ON BOTTOM/////////////////////
 }
