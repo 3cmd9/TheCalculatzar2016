@@ -12,8 +12,8 @@ package com.snj;
 public class BusinessFeelsSparkly {
     
     public static void main(String[] args) {
-        
-        
+     // Sample simple interest to calculate money owed from loan. Money owed - percent as whole number, time in years)   
+     // System.out.println (simple(55000,3, 10));  
         
         
         
@@ -183,7 +183,8 @@ public class BusinessFeelsSparkly {
     
     
     
- 
+
+    
     
     
     
