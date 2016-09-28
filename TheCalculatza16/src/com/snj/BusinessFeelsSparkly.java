@@ -15,7 +15,7 @@ public class BusinessFeelsSparkly {
         
     }    
     //WE NEED:
-    // James - Profit calculator (175 onwards)
+    // James - Profit calculator (175 onwards) - Mortgage (after my other one.)
     //  Nate - 
    //Spencer - 
     //
