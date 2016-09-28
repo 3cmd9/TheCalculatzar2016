@@ -5,19 +5,40 @@ package thecalculatza16;
  * @author 066223090
  */
 public class Scientific {
-
-    public static double volOfCyl(double radius, double height) {
+    /**
+     *Calculates the volume of a Cylinder
+     * @param radius    double      Radius of base of cylinder
+     * @param height    double      Height of cylinder
+     * @return          String      Volume of the cylinder
+     */
+    public static double volOfCylinder(double radius, double height) {
         return (height * (4 / 3) * Math.PI * (Math.pow(radius, 3)));
     }
-
+    /**
+     * Calculates the volume of a Rectangular Prism
+     * @param length    double      Length of the prism
+     * @param width     double      Width of the prism
+     * @param height    double      Height of the prism
+     * @return          double      Volume of the prism
+     */
     public static double volOfRectPrism(double length, double width, double height) {
         return (length * width * height);
     }
-
+    /**
+     * Calculates the volume of a Sphere
+     * @param radius    double      Radius of the sphere
+     * @return          double      Volume of the sphere
+     */
     public static double volOfSphere(double radius) {
         return ((4 / 3) * Math.PI * (Math.pow(radius, 3)));
     }
-
+    /**
+     * Calculates the volume of a Pyramid
+     * @param length    double      Length of the base of the pyramid
+     * @param width     double      Width of the base of the pyramid
+     * @param height    double      Height of the pyramid
+     * @return          double      Volume of the pyramid
+     */
     public static double volOfPyramid(double length, double width, double height) {
         return ((length * width * height) / 3);
     }
@@ -49,11 +70,15 @@ public class Scientific {
     public static double areaOfTrapeze(double b, double a, double h) {
         return ((a + b) * h / 2);
     }
-
+    /**
+     * Converts a decimal number into an improper fraction
+     * @param dec       double      Decimal number to be converted
+     * @return          String      Improper fraction with format "numerator/denominator"
+     */
     public static String decToFrac(double dec) {
-        double base = 1;
         double temp;
-        dec *= base *= Math.pow(10.0,Double.toString(dec).length() - (Double.toString(dec).indexOf('.'))-1);
+        double base = 1;
+        dec *= base *= Math.pow(10.0, Double.toString(dec).length() - (Double.toString(dec).indexOf('.')) - 1);
         double decConst = dec;
         double baseConst = base;
         while (base != 0.0) {
@@ -63,20 +88,22 @@ public class Scientific {
         }
         decConst /= dec;
         baseConst /= dec;
-        return ((int)decConst + "/" + (int)baseConst);
+        return ((int) decConst + "/" + (int) baseConst);
     }
-    
+
     public static String linearEqnOf(double x1, double y1, double x2, double y2) {
         String eqn = "y = ";
-        double slope = ((y2 - y1)/(x2-x1));
-        if (slope != 0)
-            eqn +=  slope + "x";
+        double slope = ((y2 - y1) / (x2 - x1));
+        if (slope != 0) {
+            eqn += slope + "x";
+        }
         double b = (y2 - slope * x2);
-        if (b > 0)
+        if (b > 0) {
             eqn += "+" + b;
-        else if (b < 0)
+        } else if (b < 0) {
             eqn += b;
+        }
         return eqn;
     }
-    
+
 }

@@ -32,6 +32,44 @@ public class EssayCalc {
         }
         return wordCount + 1;
     }
+    
+    
+     public static int numVowel(String essay) {
+        int numVowel = 0;
+        for (int i = 0; i <= essay.length() - 1; i++) {
+            switch (essay.charAt(i)) {
+                case 'a':
+                    numVowel++;
+                    break;
+                case 'e':
+                    numVowel++;
+                    break;
+                case 'i':
+                    numVowel++;
+                    break;
+                case 'o':
+                    numVowel++;
+                    break;
+                case 'u':
+                    numVowel++;
+                    break;
+
+            }
+        }
+        System.out.println(numVowel);
+        return numVowel;
+    }
+    
+    public static int numParagraph(String essay)
+    {
+     int numParagraph = 0;
+        
+        
+     
+        return numParagraph;
+    }
+    
+    
 
     /////////////////////////////JAKE ON TOP, CAMERON ON BOTTOM/////////////////////
 }
