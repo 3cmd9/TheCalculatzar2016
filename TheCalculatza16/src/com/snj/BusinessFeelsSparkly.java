@@ -15,12 +15,12 @@ public class BusinessFeelsSparkly {
     
     public static void main(String[] args) {
      // Sample simple interest to calculate money owed from loan. Money owed - percent as whole number, time in years)   
-       Scanner kbScan = new Scanner(System.in);
-       System.out.println ("Amount borrowed, percent, time in years");
-       double sumBorrowed = kbScan.nextInt();
-       double percent = kbScan.nextInt();
-       double time = kbScan.nextInt();
-       System.out.println (simple(sumBorrowed,percent, time)); 
+     //Scanner kbScan = new Scanner(System.in);
+     //System.out.println ("Amount borrowed, percent, time in years");
+     //double sumBorrowed = kbScan.nextInt();
+     //double percent = kbScan.nextInt();
+     //double time = kbScan.nextInt();
+     //System.out.println (simple(sumBorrowed,percent, time)); 
         
         //System.out.println(mortgage(100000, 0.005, 12, 15));
         //
