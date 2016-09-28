@@ -97,6 +97,7 @@ public class BusinessFeelsSparkly {
     
     
     
+    //spencer
     
     
     
@@ -171,8 +172,32 @@ public class BusinessFeelsSparkly {
     
     
     
+
     
-public static int profit(int moMade, int moExp) {    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    public static int profit(int moMade, int moExp) {    
     int profit;
     profit = moMade - moExp;
     return profit;
@@ -218,4 +243,87 @@ public static int profit(int moMade, int moExp) {
     
     
 }
+public static int mortgage(int moMade, int moExp) {
+
+
+
+
+    return moMade;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//nate
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
