@@ -22,8 +22,8 @@ public class BusinessFeelsSparkly {
        double time = kbScan.nextInt();
        System.out.println (simple(sumBorrowed,percent, time)); 
         
-        
-        
+        //System.out.println(mortgage(100000, 0.005, 12, 15));
+        //
         
         
         
@@ -204,21 +204,22 @@ public class BusinessFeelsSparkly {
     
     
     
-    public static int profit(int moMade, int moExp) {    
-    int profit;
+    public static String profit(double moMade, double moExp) {    
+    double profit;
+    String statement;
+    double percentage;
+    
+    //find the profit
     profit = moMade - moExp;
-    return profit;
+    
+    //find the profit percentage
+    percentage = (profit * 100) / moExp;
     
     
     
     
-    
-    
-    
-    
-    
-    
-    
+    statement = "You made: " + profit + "$. In percentage that is a profit of " + percentage + "%.";
+    return statement;
 }
 public static double mortgage(double princ, double inRa, double payOft, double payLong) {    
     double nuPa = payOft * payLong;
@@ -257,7 +258,6 @@ public static double mortgage(double princ, double inRa, double payOft, double p
 
     return monthPay;
 }
-
 
 
 
