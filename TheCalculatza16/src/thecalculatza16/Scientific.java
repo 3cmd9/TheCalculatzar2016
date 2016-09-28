@@ -53,14 +53,9 @@ public class Scientific {
     public static String decToFrac(double dec) {
         double base = 1;
         double temp;
-        dec *= base *= 10 * (Double.toString(dec).length() - (Double.toString(dec).indexOf('.')));
+        dec *= base *= Math.pow(10.0,Double.toString(dec).length() - (Double.toString(dec).indexOf('.'))-1);
         double decConst = dec;
         double baseConst = base;
-        if (dec < base) {
-            temp = base;
-            base = dec;
-            dec = base;
-        }
         while (base != 0.0) {
             temp = dec % base;
             dec = base;
@@ -68,7 +63,7 @@ public class Scientific {
         }
         decConst /= dec;
         baseConst /= dec;
-        return (decConst + "/" + baseConst);
+        return ((int)decConst + "/" + (int)baseConst);
     }
     
     public static String linearEqnOf(double x1, double y1, double x2, double y2) {
