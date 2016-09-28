@@ -197,10 +197,10 @@ public class BusinessFeelsSparkly {
     
     
     
-    public static String profit(int moMade, int moExp) {    
-    int profit;
+    public static String profit(double moMade, double moExp) {    
+    double profit;
     String statement;
-    int percentage;
+    double percentage;
     
     //find the profit
     profit = moMade - moExp;
