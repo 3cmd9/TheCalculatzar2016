@@ -98,10 +98,12 @@ public class BusinessFeelsSparkly {
     
     
     //spencer
-    
-    
-    
-    
+    public static double simple (double sumBorrowed, double percent, double time) {
+    double totAmount = 0;    
+    percent = percent/100;
+    totAmount = (sumBorrowed*percent*time) + sumBorrowed;
+    return totAmount;
+    }  
     
     
     
@@ -173,8 +175,6 @@ public class BusinessFeelsSparkly {
     
     
 
-    
-    
     
     
     
