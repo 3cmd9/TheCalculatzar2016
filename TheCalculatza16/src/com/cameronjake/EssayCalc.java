@@ -23,7 +23,7 @@ public class EssayCalc {
        
        
    }	
-   
+   //Jake = words, word length and sentences
    
    
    
