@@ -13,7 +13,7 @@ public class EssayCalc {
    public static void main(String[] args) {
 		
    }	
-   
+   //Jake = words, word length and sentences
    
    
    
