@@ -25,7 +25,7 @@ public class BusinessFeelsSparkly {
         //System.out.println(mortgage(100000, 0.005, 12, 15));
         //
         
-        System.out.println(profit(12.50, 5.23));
+        //System.out.println(profit(12.50, 5.23));
         
         
         
