@@ -15,7 +15,7 @@ public class BusinessFeelsSparkly {
         
     }    
     //WE NEED:
-    // James - Profit calculator (175 onwards)
+    // James - Profit calculator (175 onwards) - Mortgage (after my other one.)
     //  Nate - 
     //Spencer - 
     //
@@ -172,6 +172,10 @@ public class BusinessFeelsSparkly {
     
     
     
+public static int profit(int moMade, int moExp) {    
+    int profit;
+    profit = moMade - moExp;
+    return profit;
     
     
     
@@ -213,9 +217,5 @@ public class BusinessFeelsSparkly {
     
     
     
-    
-    
-    
-    
-    
+}
 }
