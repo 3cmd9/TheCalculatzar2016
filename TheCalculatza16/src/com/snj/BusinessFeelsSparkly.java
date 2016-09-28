@@ -12,6 +12,56 @@ package com.snj;
 public class BusinessFeelsSparkly {
     
     public static void main(String[] args) {
+     // Sample simple interest to calculate money owed from loan. Money owed - percent as whole number, time in years)   
+     // System.out.println (simple(55000,3, 10));  
+        
+        //System.out.println(mortgage(100000, 0.005, 12, 15));
+        //
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
     }    
     //WE NEED:
@@ -21,12 +71,7 @@ public class BusinessFeelsSparkly {
     //
     //
     //
-    //
-    //
-    //
-    //
-    //
-    //
+    //  
     
     
     
@@ -40,52 +85,7 @@ public class BusinessFeelsSparkly {
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+   
     
     
     
@@ -98,10 +98,12 @@ public class BusinessFeelsSparkly {
     
     
     //spencer
-    
-    
-    
-    
+    public static double simple (double sumBorrowed, double percent, double time) {
+    double totAmount = 0;    
+    percent = percent/100;
+    totAmount = (sumBorrowed*percent*time) + sumBorrowed;
+    return totAmount;
+    }  
     
     
     
@@ -181,6 +183,7 @@ public class BusinessFeelsSparkly {
     
     
     
+
     
     
     
@@ -194,30 +197,28 @@ public class BusinessFeelsSparkly {
     
     
     
+    public static String profit(double moMade, double moExp) {    
+    double profit;
+    String statement;
+    double percentage;
     
-    
-    
-    public static int profit(int moMade, int moExp) {    
-    int profit;
+    //find the profit
     profit = moMade - moExp;
-    return profit;
+    
+    //find the profit percentage
+    percentage = (profit * 100) / moExp;
     
     
     
     
-    
-    
-    
-    
-    
-    
-    
+    statement = "You made: " + profit + "$. In percentage that is a profit of " + percentage + "%.";
+    return statement;
 }
-public static int mortgage(int moPay, int pri, int inRa, int payOft, int payLong) {    
-    int nuPa = payOft * payLong;
+public static double mortgage(double princ, double inRa, double payOft, double payLong) {    
+    double nuPa = payOft * payLong;
+    double monthPay;
     
-    
-    
+    monthPay = princ * ((inRa*Math.pow(1 + inRa, nuPa))/(Math.pow(1+inRa, nuPa)-1));
     
     
     
@@ -248,9 +249,8 @@ public static int mortgage(int moPay, int pri, int inRa, int payOft, int payLong
 
 
 
-    return moMade;
+    return monthPay;
 }
-
 
 
 

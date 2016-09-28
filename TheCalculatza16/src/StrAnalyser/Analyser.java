@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.String;
+package StrAnalyser;
 
 import java.util.Scanner;
 
@@ -14,7 +14,18 @@ import java.util.Scanner;
 public class String {
 
     public static void main(String[] args) {
-        System.out.println(Shift());
+        Scanner i=new Scanner(System.in);
+        System.out.println("Enter the sentence that you would like to analyse");
+        java.lang.String Sentence=i.nextLine();
+        System.out.println("What would you like to do? (1=Shift 2=Vowel Count 3=To ASCII)");
+        switch(i.nextInt()){
+             case 1:{//Ceasar Cipher
+                 Shift();
+            }case 2:{
+                vowelCount(Sentence);
+            }case 3:{
+                
+            }
     }
 
     public static String Shift() {
