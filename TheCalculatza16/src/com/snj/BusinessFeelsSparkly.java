@@ -213,8 +213,8 @@ public class BusinessFeelsSparkly {
     
     
 }
-public static int mortgage(int moMade, int moExp) {    
-    
+public static int mortgage(int moPay, int pri, int inRa, int payOft, int payLong) {    
+    int nuPa = payOft * payLong;
     
     
     
