@@ -53,8 +53,14 @@ public class Scientific {
     public static String linearEqnOf(double x1, double y1, double x2, double y2) {
         String eqn = "y = ";
         double slope = ((y2 - y1)/(x2-x1));
-        eqn +=  slope + "x";
-        eqn += (y2 - slope * x2);
+        if (slope != 0)
+            eqn +=  slope + "x";
+        double b = (y2 - slope * x2);
+        if (b > 0)
+            eqn += "+" + b;
+        else if (b < 0)
+            eqn += b;
         return eqn;
     }
+    
 }
