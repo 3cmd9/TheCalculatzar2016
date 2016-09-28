@@ -11,7 +11,9 @@ package com.snj;
  */
 public class BusinessFeelsSparkly {
     
+    public static void main(String[] args) {
         
+    }    
     //WE NEED:
     // James - Profit calculator (175 onwards)
     //  Nate - 
