@@ -10,5 +10,24 @@ package com.cameronjake;
  * @author 068786730
  */
 public class EssayCalc {
-    
+   public static void main(String[] args) {
+		
+   }	
+   
+   
+   
+   
+   
+   
+   
+   /////////////////////////////JAKE ON TOP, CAMERON ON BOTTOM/////////////////////
+   
+   
+   
+   
+   
+   
+   
+   
+   
 }
