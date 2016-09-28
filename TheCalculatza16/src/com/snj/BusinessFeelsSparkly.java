@@ -105,6 +105,14 @@ public class BusinessFeelsSparkly {
     
     
     //spencer
+    /**
+     * Simple Interest
+     * 
+     *
+     *
+     * 
+     * 
+     */
     public static double simple (double sumBorrowed, double percent, double time) {
     double totAmount = 0;    
     percent = percent/100;
