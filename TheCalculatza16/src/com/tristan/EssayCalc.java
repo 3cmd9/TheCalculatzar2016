@@ -10,5 +10,8 @@ package com.tristan;
  * @author 069948099
  */
 public class EssayCalc {
+    public static void main(String [] args){
+        
+    }
     
 }
