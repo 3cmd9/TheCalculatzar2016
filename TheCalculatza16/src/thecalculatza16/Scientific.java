@@ -62,4 +62,5 @@ public class Scientific {
             eqn += b;
         return eqn;
     }
+    
 }
