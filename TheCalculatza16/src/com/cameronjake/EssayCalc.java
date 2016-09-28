@@ -24,7 +24,14 @@ public class EssayCalc {
        
    }	
    //Jake = words, word length and sentences
-   
+      public static int wordsAndSentences(String essay, int wordCount) {
+        for (int i = 0; i <= essay.length() - 1; i++) {
+            if (essay.charAt(i) == ' ') {
+                wordCount++;
+            }
+        }
+        return wordCount + 1;
+    }
    
    
    
