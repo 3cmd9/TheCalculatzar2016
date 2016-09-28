@@ -213,11 +213,11 @@ public class BusinessFeelsSparkly {
     
     
 }
-public static int mortgage(int moPay, int pri, int inRa, int payOft, int payLong) {    
-    int nuPa = payOft * payLong;
+public static double mortgage(double princ, double inRa, double payOft, double payLong) {    
+    double nuPa = payOft * payLong;
+    double monthPay;
     
-    
-    
+    monthPay = princ * ((inRa*Math.pow(1 + inRa, nuPa)));
     
     
     
@@ -248,7 +248,7 @@ public static int mortgage(int moPay, int pri, int inRa, int payOft, int payLong
 
 
 
-    return moMade;
+    return monthPay;
 }
 
 
