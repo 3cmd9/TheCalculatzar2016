@@ -5,13 +5,23 @@
  */
 package com.cameronjake;
 
+import java.util.Scanner;
+
 /**
  *
  * @author 068786730
  */
 public class EssayCalc {
    public static void main(String[] args) {
-		
+       String essay;
+       Scanner input = new Scanner (System.in);
+       essay = input.nextLine();
+       
+       
+       
+       
+       
+       
    }	
    
    
