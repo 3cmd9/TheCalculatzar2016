@@ -197,21 +197,22 @@ public class BusinessFeelsSparkly {
     
     
     
-    public static int profit(int moMade, int moExp) {    
+    public static String profit(int moMade, int moExp) {    
     int profit;
+    String statement;
+    int percentage;
+    
+    //find the profit
     profit = moMade - moExp;
-    return profit;
+    
+    //find the profit percentage
+    percentage = (profit * 100) / moExp;
     
     
     
     
-    
-    
-    
-    
-    
-    
-    
+    statement = "You made: " + profit + "$. In percentage that is a profit of " + percentage + "%.";
+    return statement;
 }
 public static double mortgage(double princ, double inRa, double payOft, double payLong) {    
     double nuPa = payOft * payLong;
@@ -250,7 +251,6 @@ public static double mortgage(double princ, double inRa, double payOft, double p
 
     return monthPay;
 }
-
 
 
 
