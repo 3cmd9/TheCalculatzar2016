@@ -5,6 +5,8 @@
  */
 package com.snj;
 
+import java.util.Scanner;
+
 /**
  *
  * @author 073685844
@@ -13,7 +15,12 @@ public class BusinessFeelsSparkly {
     
     public static void main(String[] args) {
      // Sample simple interest to calculate money owed from loan. Money owed - percent as whole number, time in years)   
-     // System.out.println (simple(55000,3, 10));  
+       Scanner kbScan = new Scanner(System.in);
+       System.out.println ("Amount borrowed, percent, time in years");
+       double sumBorrowed = kbScan.nextInt();
+       double percent = kbScan.nextInt();
+       double time = kbScan.nextInt();
+       System.out.println (simple(sumBorrowed,percent, time)); 
         
         
         
