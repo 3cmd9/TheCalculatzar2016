@@ -29,16 +29,15 @@ public class BusinessFeelsSparkly {
         
         calc = scan.nextLine();
         
+        if (calc.equals("m")) {
+        System.out.println("Enter principal amount, then intrest rate, then how often you pay per year, then the length of payments in years");
+        a = Double.parseDouble(scan.next());
+        b = Double.parseDouble(scan.next());
+        c = Double.parseDouble(scan.next());
+        d = Double.parseDouble(scan.next());
         
-        
-     
-        
-        
-        
-        
-        
-        
-        
+        mortgage(a,b,c,d);
+        }
         
         
         
