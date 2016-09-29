@@ -104,17 +104,17 @@ public class BusinessFeelsSparkly {
     
     //spencer
     /**
-     * Simple Interest
+     * Simple Interest program to calculate interest on a bank loan
      * 
-     *
-     *
-     * 
-     * 
+     *@param loan amount loaned from bank
+     *@param percent percent interest of the loan per year
+     *@param time time in years the loan is borrowed
+     *@return total amount owed to bank 
      */
-    public static double simple (double sumBorrowed, double percent, double time) {
+    public static double simple (double loan, double percent, double time) {
     double totAmount = 0;    
     percent = percent/100;
-    totAmount = (sumBorrowed*percent*time) + sumBorrowed;
+    totAmount = (loan*percent*time) + loan;
     return totAmount;
     }  
     
