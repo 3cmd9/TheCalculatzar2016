@@ -36,7 +36,7 @@ public class BusinessFeelsSparkly {
         c = Double.parseDouble(scan.next());
         d = Double.parseDouble(scan.next());
         
-        mortgage(a,b,c,d);
+        System.out.println(mortgage(a,b,c,d));
         }
         
         
