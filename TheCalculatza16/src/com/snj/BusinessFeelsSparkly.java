@@ -338,7 +338,7 @@ public static double currency(String original, String exchange ){
     
     
     
-    return exchange; 
+  return 1;//exchange; 
       
 }
 
