@@ -29,6 +29,7 @@ public class Analyser {
             }
     }
         }
+    }
 
     public static String Shift() {
 
@@ -109,7 +110,7 @@ public class Analyser {
     public static String toASCII(String Sentence) {
         String ASCII="";
         for(int x=0;x<Sentence.length();x++){
-            ASCII+=
+            ASCII+=(int)Sentence.charAt(x); 
         }
 
         return ASCII;
@@ -150,4 +151,4 @@ public class Analyser {
     
     
 }
-}
+
