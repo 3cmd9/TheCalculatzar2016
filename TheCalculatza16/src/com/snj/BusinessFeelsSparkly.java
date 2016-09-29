@@ -10,30 +10,28 @@ import java.util.Scanner;
  * @author 073685844
  */
 public class BusinessFeelsSparkly {
-    
     public static void main(String[] args) {
-     // Sample simple interest to calculate money owed from loan. Money owed - percent as whole number, time in years)   
-     //Scanner kbScan = new Scanner(System.in);
-     //System.out.println ("Amount borrowed, percent, time in years");
-     //double sumBorrowed = kbScan.nextInt();
-     //double percent = kbScan.nextInt();
-     //double time = kbScan.nextInt();
-     //System.out.println (simple(sumBorrowed,percent, time)); 
+    Scanner scan = new Scanner(System.in);
+     String calc = "";
+     double a;
+     double b;
+     double c;
+     double d;
+     double e;
+
         
-        //System.out.println(mortgage(100000, 0.005, 12, 15));
-        //
+        System.out.println("Enter letter of calculator wanted");
+        System.out.println("m - Mortgage Calculator");
+        System.out.println("p - profit calculator");
+        System.out.println("c - currency converter");
+        System.out.println("si - simple interest");
+        System.out.println("ci - compound interest");
         
-        //System.out.println(profit(12.50, 5.23));
-        
-        
-        
-        
-        
-        
-        
+        calc = scan.nextLine();
         
         
         
+     
         
         
         
@@ -104,17 +102,17 @@ public class BusinessFeelsSparkly {
     
     //spencer
     /**
-     * Simple Interest
+     * Simple Interest program to calculate interest on a bank loan
      * 
-     *
-     *
-     * 
-     * 
+     *@param loan amount loaned from bank
+     *@param percent percent interest of the loan per year
+     *@param time time in years the loan is borrowed
+     *@return total amount owed to bank 
      */
-    public static double simple (double sumBorrowed, double percent, double time) {
+    public static double simple (double loan, double percent, double time) {
     double totAmount = 0;    
     percent = percent/100;
-    totAmount = (sumBorrowed*percent*time) + sumBorrowed;
+    totAmount = (loan*percent*time) + loan;
     return totAmount;
     }  
     
