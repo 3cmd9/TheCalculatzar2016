@@ -18,8 +18,11 @@ public class EssayCalc {
         int wordCount = 0;
         int sentenceCount = 0;
         Scanner input = new Scanner(System.in);
+        System.out.println("Please enter your essay. Seperate each paragraph by a double space");
         essay = input.nextLine();
         System.out.println(wordsAndSentences(essay, wordCount, sentenceCount));
+        System.out.println("Number of vowels:" + numVowel(essay));
+        System.out.println("Number of paragraphs:" + numParagraph(essay));
     }
     //Jake = words, word length and sentences
 
@@ -56,16 +59,21 @@ public class EssayCalc {
 
             }
         }
-        System.out.println(numVowel);
         return numVowel;
     }
     
     public static int numParagraph(String essay)
     {
      int numParagraph = 0;
+        for (int i = 0; i <= essay.length() -1; i++)
+        {
+            if (essay.charAt(i) == ' '&& essay.charAt(i+1) == ' ') 
+            {
+              numParagraph++;  
+            }
+
+        }    
         
-        
-     
         return numParagraph;
     }
     
