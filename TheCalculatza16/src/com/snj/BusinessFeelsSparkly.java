@@ -12,9 +12,9 @@ import java.util.Scanner;
  * @author 073685844
  */
 public class BusinessFeelsSparkly {
-    
     public static void main(String[] args) {
-     // Sample simple interest to calculate money owed from loan. Money owed - percent as whole number, time in years)   
+    Scanner scan = new Scanner(System.in);
+     String calc = "";
      //Scanner kbScan = new Scanner(System.in);
      //System.out.println ("Amount borrowed, percent, time in years");
      //double sumBorrowed = kbScan.nextInt();
@@ -25,17 +25,18 @@ public class BusinessFeelsSparkly {
         //System.out.println(mortgage(100000, 0.005, 12, 15));
         //
         
-        System.out.println(profit(12.50, 5.23));
+        System.out.println("Enter letter of calculator wanted");
+        System.out.println("m - Mortgage Calculator");
+        System.out.println("p - profit calculator");
+        System.out.println("c - currency converter");
+        System.out.println("si - simple interest");
+        System.out.println("ci - compound interest");
+        
+        calc = scan.nextLine();
         
         
         
-        
-        
-        
-        
-        
-        
-        
+     
         
         
         
