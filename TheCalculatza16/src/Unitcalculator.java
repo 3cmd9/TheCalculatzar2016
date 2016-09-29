@@ -18,35 +18,49 @@ public class Unitcalculator {
     
     public static void temperature(){
     
-    System.out.println("Do you have the Celcius or Fahrenheit?");
+    System.out.println("Celcius or Fahrenheit?");
     Scanner kbScan = new Scanner(System.in);
-    
-    String answer = kbScan.next(); 
-            
+    Scanner kbScan1 = new Scanner(System.in);
+    String answer = kbScan.nextLine(); 
+    answer = answer.toLowerCase();
 
 
-    if (answer.equals("Celcius")){
+    if (answer.equals("celcius")){
 
     System.out.println ("What's the temperature?");
-    int cel = kbScan.nextInt();
+    int cel = kbScan1.nextInt();
 
     System.out.println (cel * 1.8 + 32); 
 
 
 
-    } else if (answer.equals("Fahrenheit")){
+    } else if (answer.equals("fahrenheit")){
     
     System.out.println ("What's the temperature?");
-    int fahr = kbScan.nextInt();
+    int fahr = kbScan1.nextInt();
 
     System.out.println ((fahr - 32) * 1.8);
 
+    
 }
     
     
     
     
     }
+    
+    //public static void 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 public static void main(String[] args){
     temperature();
 }    
