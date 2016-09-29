@@ -16,25 +16,25 @@ public class EssayCalc {
     public static void main(String[] args) {
         String essay;
         int wordCount = 0;
+        int sentenceCount = 0;
         Scanner input = new Scanner(System.in);
         System.out.println("Please enter your essay. Seperate each paragraph by a double space");
         essay = input.nextLine();
-        
-        numParagraph(essay);
-
+        System.out.println(wordsAndSentences(essay, wordCount, sentenceCount));
     }
     //Jake = words, word length and sentences
 
-    public static int wordsAndSentences(String essay, int wordCount) {
+    public static int wordsAndSentences(String essay, int wordCount, int sentenceCount) {
         for (int i = 0; i <= essay.length() - 1; i++) {
             if (essay.charAt(i) == ' ') {
                 wordCount++;
             }
+            
         }
         return wordCount + 1;
     }
     
-    
+      /////////////////////////////JAKE ON TOP, CAMERON ON BOTTOM/////////////////////
      public static int numVowel(String essay) {
         int numVowel = 0;
         for (int i = 0; i <= essay.length() - 1; i++) {
@@ -57,7 +57,6 @@ public class EssayCalc {
 
             }
         }
-        System.out.println(numVowel);
         return numVowel;
     }
     
@@ -73,11 +72,7 @@ public class EssayCalc {
 
         }    
         
-        System.out.println(numParagraph);
         return numParagraph;
     }
     
-    
-
-    /////////////////////////////JAKE ON TOP, CAMERON ON BOTTOM/////////////////////
 }

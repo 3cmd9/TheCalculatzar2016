@@ -6,7 +6,7 @@ package thecalculatza16;
  */
 public class Scientific {
     /**
-     *Calculates the volume of a Cylinder
+     *Calculates the volume of a Cylinder (Liam E.)
      * @param radius    double      Radius of base of cylinder
      * @param height    double      Height of cylinder
      * @return          String      Volume of the cylinder
@@ -15,7 +15,7 @@ public class Scientific {
         return (height * (4 / 3) * Math.PI * (Math.pow(radius, 3)));
     }
     /**
-     * Calculates the volume of a Rectangular Prism
+     * Calculates the volume of a Rectangular Prism (Liam E.)
      * @param length    double      Length of the prism
      * @param width     double      Width of the prism
      * @param height    double      Height of the prism
@@ -25,7 +25,7 @@ public class Scientific {
         return (length * width * height);
     }
     /**
-     * Calculates the volume of a Sphere
+     * Calculates the volume of a Sphere (Liam E.)
      * @param radius    double      Radius of the sphere
      * @return          double      Volume of the sphere
      */
@@ -33,7 +33,7 @@ public class Scientific {
         return ((4 / 3) * Math.PI * (Math.pow(radius, 3)));
     }
     /**
-     * Calculates the volume of a Pyramid
+     * Calculates the volume of a Pyramid (Liam E.)
      * @param length    double      Length of the base of the pyramid
      * @param width     double      Width of the base of the pyramid
      * @param height    double      Height of the pyramid
@@ -71,7 +71,7 @@ public class Scientific {
         return ((a + b) * h / 2);
     }
     /**
-     * Converts a decimal number into an improper fraction
+     * Converts a decimal number into an improper fraction (Liam E.)
      * @param dec       double      Decimal number to be converted
      * @return          String      Improper fraction with format "numerator/denominator"
      */

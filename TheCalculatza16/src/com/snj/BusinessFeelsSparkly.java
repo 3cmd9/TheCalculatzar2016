@@ -4,38 +4,40 @@
  * and open the template in the editor.
  */
 package com.snj;
-
+import java.util.Scanner;
 /**
  *
  * @author 073685844
  */
 public class BusinessFeelsSparkly {
-    
     public static void main(String[] args) {
-     // Sample simple interest to calculate money owed from loan. Money owed - percent as whole number, time in years)   
-     // System.out.println (simple(55000,3, 10));  
+    Scanner scan = new Scanner(System.in);
+     String calc = "";
+     double a;
+     double b;
+     double c;
+     double d;
+     double e;
+
         
-        //System.out.println(mortgage(100000, 0.005, 12, 15));
-        //
+        System.out.println("Enter letter of calculator wanted");
+        System.out.println("m - Mortgage Calculator");
+        System.out.println("p - profit calculator");
+        System.out.println("c - currency converter");
+        System.out.println("si - simple interest");
+        System.out.println("ci - compound interest");
         
+        calc = scan.nextLine();
         
+        if (calc.equals("m")) {
+        System.out.println("Enter principal amount, then intrest rate, then how often you pay per year, then the length of payments in years");
+        a = Double.parseDouble(scan.next());
+        b = Double.parseDouble(scan.next());
+        c = Double.parseDouble(scan.next());
+        d = Double.parseDouble(scan.next());
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        System.out.println(mortgage(a,b,c,d));
+        }
         
         
         
@@ -98,10 +100,18 @@ public class BusinessFeelsSparkly {
     
     
     //spencer
-    public static double simple (double sumBorrowed, double percent, double time) {
+    /**
+     * Simple Interest program to calculate interest on a bank loan
+     * 
+     *@param loan amount loaned from bank
+     *@param percent percent interest of the loan per year
+     *@param time time in years the loan is borrowed
+     *@return total amount owed to bank 
+     */
+    public static double simple (double loan, double percent, double time) {
     double totAmount = 0;    
     percent = percent/100;
-    totAmount = (sumBorrowed*percent*time) + sumBorrowed;
+    totAmount = (loan*percent*time) + loan;
     return totAmount;
     }  
     
@@ -206,7 +216,7 @@ public class BusinessFeelsSparkly {
     profit = moMade - moExp;
     
     //find the profit percentage
-    percentage = (profit * 100) / moExp;
+    percentage = (Math.round(((profit * 100) / moExp) * 100))/100;
     
     
     
@@ -298,6 +308,39 @@ public static double mortgage(double princ, double inRa, double payOft, double p
 
 
 //nate
+public static double currency(String original, String exchange ){
+  Scanner input = new Scanner(System.in);
+  System.out.println("Type the amout of money u want to exchange");
+  
+  
+  String[] currency = new String[5];
+  double[] rate = new double [5];
+  currency [0] = "USD";
+  currency [1] = "GBP";
+  currency [2] = "CAD";
+  currency [3] = "EUR";
+  currency [4] = "AUD";
+  if(original.equals("USD")){  
+    rate[0] = 1; 
+    rate[1] = 0.65915;
+    rate[2] = 1.33860;
+    rate[3] = 0.89076;
+    rate[4] = 1.43111;   
+  }else if(original.equals("CAD")){
+    rate[0] = 1.51710; 
+    rate[1] = 1;
+    rate[2] = 2.03080;
+    rate[3] = 1.35081;
+    rate[4] = 2.17088;
+  }
+ 
+  
+    
+    
+    
+  return 1;//exchange; 
+      
+}
 
 
 
