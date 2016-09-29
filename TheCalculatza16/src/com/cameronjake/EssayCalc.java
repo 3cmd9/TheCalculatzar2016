@@ -21,6 +21,8 @@ public class EssayCalc {
         System.out.println("Please enter your essay. Seperate each paragraph by a double space");
         essay = input.nextLine();
         System.out.println(wordsAndSentences(essay, wordCount, sentenceCount));
+        System.out.println("Number of vowels:" + numVowel(essay));
+        System.out.println("Number of paragraphs:" + numParagraph(essay));
     }
     //Jake = words, word length and sentences
 
