@@ -18,6 +18,8 @@ public class EssayCalc {
         int wordCount = 0;
         Scanner input = new Scanner(System.in);
         essay = input.nextLine();
+        
+        numParagraph(essay);
 
     }
     //Jake = words, word length and sentences
@@ -61,9 +63,19 @@ public class EssayCalc {
     public static int numParagraph(String essay)
     {
      int numParagraph = 0;
+        for (int i = 0; i <= essay.length() -1; i++)
+        {
+            if (essay.charAt(i) == ' '&& essay.charAt(i+1) == ' ') 
+            {
+              numParagraph++;  
+            }
+
+
+      
+
+        }    
         
-        
-     
+        System.out.println(numParagraph);
         return numParagraph;
     }
     
