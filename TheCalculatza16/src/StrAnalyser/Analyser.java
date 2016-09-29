@@ -73,8 +73,35 @@ public class String {
         }
     }
 
-    public static String vowelCount(String Sentence) {
-
+    public static int vowelCount(java.lang.String sentence) {
+        //set the sentence to all lower case to make recognition easier
+        sentence = sentence.toLowerCase();
+        //declare variables
+        char ltr;
+        int numVowl = 0;
+        
+        for(int index = 0; index < sentence.length(); index++)
+        {
+            //find each letter in the string 
+            ltr = sentence.charAt(index);
+            
+            //if the letter is a vowel increase vowel count otherwise do nothing
+            switch(ltr)
+            {
+                case 'a': numVowl++;
+                          break;
+                case 'e': numVowl++;
+                          break;
+                case 'i': numVowl++;
+                          break;
+                case 'o': numVowl++;
+                          break;
+                case 'u': numVowl++;
+                          break;
+                default: break;
+            }
+        }
+        return(numVowl);
     }
 
     public static String toASCII(String Sentence) {
