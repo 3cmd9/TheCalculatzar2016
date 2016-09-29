@@ -11,10 +11,11 @@ import java.util.Scanner;
  *
  * @author 072753874
  */
-public class String {
+public class Analyser {
 
     public static void main(String[] args) {
         Scanner i=new Scanner(System.in);
+        for(;;){
         System.out.println("Enter the sentence that you would like to analyse");
         java.lang.String Sentence=i.nextLine();
         System.out.println("What would you like to do? (1=Shift 2=Vowel Count 3=To ASCII)");
@@ -27,6 +28,7 @@ public class String {
                 
             }
     }
+        }
 
     public static String Shift() {
 
@@ -68,7 +70,7 @@ public class String {
                 break;
             }
             case 3://Exit (3)           
-                return;                                
+                break;                                
         }
         }
     }
@@ -105,7 +107,12 @@ public class String {
     }
 
     public static String toASCII(String Sentence) {
+        String ASCII="";
+        for(int x=0;x<Sentence.length();x++){
+            ASCII+=
+        }
 
+        return ASCII;
     }
 
      public static java.lang.String Cipher(java.lang.String Sentence, int shift){
