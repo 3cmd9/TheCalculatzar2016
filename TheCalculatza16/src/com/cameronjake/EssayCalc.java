@@ -17,6 +17,7 @@ public class EssayCalc {
         String essay;
         int wordCount = 0;
         Scanner input = new Scanner(System.in);
+        System.out.println("Please enter your essay. Seperate each paragraph by a double space");
         essay = input.nextLine();
         
         numParagraph(essay);
@@ -69,9 +70,6 @@ public class EssayCalc {
             {
               numParagraph++;  
             }
-
-
-      
 
         }    
         
